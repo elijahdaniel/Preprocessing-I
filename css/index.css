@@ -186,6 +186,22 @@ nav a:hover {
     border: 1 px solid black;
   }
 }
+@media (max-width: 500px) {
+  nav a {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+  }
+  nav a:hover {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    border: 0px solid black;
+  }
+}
 .intro {
   margin-top: 40px;
   padding: 0px;
@@ -193,9 +209,35 @@ nav a:hover {
 .intro img {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .intro img {
+    visibility: hidden;
+    display: none;
+  }
+}
 .intro h1 {
   font-size: 3rem;
   align-content: center;
   padding: 5px;
   display: inline;
+  text-align: center;
+}
+.intro h2 {
+  color: #4677a5;
+  font-size: 1.5rem;
+}
+.intro .header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .intro img {
+    visibility: hidden;
+    display: none;
+  }
+  .intro .header-title {
+    position: relative;
+    top: 240px;
+  }
 }

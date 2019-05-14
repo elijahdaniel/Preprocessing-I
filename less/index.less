@@ -103,14 +103,40 @@ nav {
 		100% {border: 1 px solid black;}
 	}
 
+	@media (max-width: 500px) {
+		a {
+			width: 100%;
+			display: block;
+			padding: 20px;
+			border-radius: 0px;
+			text-transform: uppercase;
+			border-bottom: 1px solid black;
+		}
+
+		a:hover {
+			text-decoration: none;
+			padding: 20px;
+			color: black;
+			border: 0px solid black;
+	}
+	}
+
 }
 
 .intro {
 	margin-top: 40px;
 	padding: 0px;
+	
 	img {
 		width: 100%;
 		// box-shadow: 0 8px 6px -6px gray;
+	}
+
+	@media (max-width: 500px) {
+		img {
+			visibility: hidden;
+			display: none;
+		}
 	}
 
 	h1 {
@@ -118,10 +144,30 @@ nav {
 		align-content: center;
 		padding: 5px;
 		display: inline;
+		text-align: center;
 	}
 
 	h2 {
-		
+		color: @blue;
+		font-size: 1.5rem;
+	}
+
+	.header-title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@media (max-width: 500px) {
+		img {
+			visibility: hidden;
+			display: none;
+		}
+
+		.header-title {
+			position: relative;
+			top: 240px;
+		}
 	}
 
 }
