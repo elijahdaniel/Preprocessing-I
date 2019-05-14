@@ -53,17 +53,20 @@ table {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@blue: #4677a5;
+
 html, body {
 	height: 100%;
+	background: white;
+	font-family: 'Roboto Slab', serif;
 }
 
 .container {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
-	text-align: center;
-	border: 1px solid red;
 	height: 100%;
-
 	@media (max-width: 800px) {
 		width: 100%;
 	}
@@ -74,7 +77,52 @@ html, body {
 }
 
 nav {
+	height: 20px;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
 	a {
 		text-decoration: none;
+		padding: 5px 20px;
+		transition: border-radius .5s ease;
+		border-radius: 40px;
+		border: 1px solid white;
+		color: black;
 	}
+
+	a:hover {
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		color: @blue;
+		border-radius: 0px;
+		animation: fade 1s;
+	}
+
+	@keyframes fade {
+		0% {border: 1px solid rgba(0, 0, 0, 0);}
+		100% {border: 1 px solid black;}
+	}
+
 }
+
+.intro {
+	margin-top: 40px;
+	padding: 0px;
+	img {
+		width: 100%;
+		// box-shadow: 0 8px 6px -6px gray;
+	}
+
+	h1 {
+		font-size: 3rem;
+		align-content: center;
+		padding: 5px;
+		display: inline;
+	}
+
+	h2 {
+		
+	}
+
+}
+

@@ -130,15 +130,21 @@ table {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v8/BngMUXZYTXPIvIBgJJSb6ufN5qA.ttf) format('truetype');
+}
 html,
 body {
   height: 100%;
+  background: white;
+  font-family: 'Roboto Slab', serif;
 }
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  text-align: center;
-  border: 1px solid red;
   height: 100%;
 }
 @media (max-width: 800px) {
@@ -151,6 +157,45 @@ body {
     width: 100%;
   }
 }
+nav {
+  height: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
 nav a {
   text-decoration: none;
+  padding: 5px 20px;
+  transition: border-radius 0.5s ease;
+  border-radius: 40px;
+  border: 1px solid white;
+  color: black;
+}
+nav a:hover {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: #4677a5;
+  border-radius: 0px;
+  animation: fade 1s;
+}
+@keyframes fade {
+  0% {
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  100% {
+    border: 1 px solid black;
+  }
+}
+.intro {
+  margin-top: 40px;
+  padding: 0px;
+}
+.intro img {
+  width: 100%;
+}
+.intro h1 {
+  font-size: 3rem;
+  align-content: center;
+  padding: 5px;
+  display: inline;
 }
