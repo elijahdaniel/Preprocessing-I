@@ -232,9 +232,9 @@ nav a:hover {
     top: 240px;
   }
 }
-.intro {
+.box-grid {
   background: #eeeeee;
-  margin: 20px auto;
+  margin: 0px auto;
   width: 100%;
   padding: 0px;
   height: 376px;
@@ -242,15 +242,15 @@ nav a:hover {
   flex-direction: row-reverse;
   justify-content: center;
 }
-.intro img {
+.box-grid img {
   width: 100%;
 }
 @media (max-width: 900px) {
-  .intro img {
+  .box-grid img {
     width: 120%;
   }
 }
-#intro-box {
+#boxes {
   width: 50%;
   height: 376px;
   display: flex;
@@ -258,6 +258,10 @@ nav a:hover {
   flex-direction: column;
   font-size: 1.1rem;
   overflow: hidden;
+}
+#boxes #headtag {
+  font-size: 0.9rem;
+  padding-top: 40px;
   text-align: center;
 }
 h1 {
@@ -269,17 +273,63 @@ h1 {
 }
 h2 {
   color: #4677a5;
-  font-size: 1.5rem;
-}
-.About {
-  background: #808080;
-  color: white;
-  width: 100%;
-  height: 400px;
-  margin-top: -20px;
-}
-.About p {
+  font-size: 1.6rem;
   text-align: center;
-  padding: 10px;
-  font-size: 0.9rem;
+}
+.mid-row3 {
+  background: white;
+}
+.mid-row3 ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding: 5px 50px;
+}
+.mid-row3 h2 {
+  text-align: left;
+  padding-left: 35px;
+}
+hr {
+  width: 80%;
+  margin-top: 20px;
+}
+.mid-row2 {
+  background: white;
+  align-content: center;
+  align-items: center;
+}
+.mid-row2 ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding: 5px 50px;
+}
+.mid-row2 h2 {
+  text-align: left;
+  padding-left: 35px;
+}
+.mid-row2 img {
+  width: 70%;
+}
+.mid-row1 {
+  background: white;
+}
+.mid-row1 ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding: 5px 50px;
+}
+.mid-row1 h2 {
+  text-align: left;
+  padding-left: 35px;
+}
+.mid-row1 h2 {
+  text-align: left;
+  padding-left: 30px;
+}
+.mid-row1 p {
+  line-height: 1.2rem;
+  text-align: none;
+  padding: 30px;
+  margin-top: -20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
