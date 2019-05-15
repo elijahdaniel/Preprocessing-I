@@ -276,6 +276,10 @@ nav a:hover {
 .box-grid .box-bottom1 hr {
   margin: 50px;
 }
+.box-grid .box-bottom1 p {
+  padding: 20px;
+  line-height: 1.5rem;
+}
 .box-grid .box-bottom2 {
   text-align: left;
   width: 50%;
@@ -302,6 +306,10 @@ nav a:hover {
 }
 .box-grid .box-bottom2 hr {
   margin: 50px;
+}
+.box-grid .box-bottom2 p {
+  padding: 20px;
+  line-height: 1.5rem;
 }
 #boxes {
   width: 50%;
