@@ -53,7 +53,297 @@ table {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@blue: #4677a5;
+@lightgray: rgb(238, 238, 238);
+
 html, body {
-    height: 100%;
+	height: 100%;
+	background: white;
+	font-family: 'Roboto Slab', serif;
 }
 
+.container {
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	@media (max-width: 800px) {
+		width: 100%;
+	}
+
+	@media (max-width: 500px) {
+		width: 100%;
+	}
+}
+
+nav {
+	height: 20px;
+	padding: 10px;
+	margin-top: 30px;
+	text-align: right;
+	a {
+		text-decoration: none;
+		padding: 5px 18px 5px 20px;
+		transition: border-radius .5s ease;
+		border-radius: 40px;
+		border: 1px solid white;
+		color: black;
+	}
+
+	a:hover {
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		color: @blue;
+		border-radius: 0px;
+		animation: fade 1s;
+	}
+
+	@keyframes fade {
+		0% {border: 1px solid rgba(0, 0, 0, 0);}
+		100% {border: 1 px solid black;}
+	}
+
+	@media (max-width: 500px) {
+		a {
+			width: 100%;
+			display: block;
+			padding: 20px;
+			border-radius: 0px;
+			text-transform: uppercase;
+			border-bottom: 1px solid black;
+			text-align: center;
+		}
+
+		a:hover {
+			text-decoration: none;
+			padding: 20px;
+			color: black;
+			border: 0px solid black;
+	}
+	}
+
+}
+
+.bnnr {
+	margin-top: 40px;
+	padding: 0px;
+	
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: 500px) {
+		img {
+			visibility: hidden;
+			display: none;
+		}
+	}
+
+	.header-title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 80px 20px;
+	}
+
+	@media (max-width: 500px) {
+		img {
+			visibility: hidden;
+			display: none;
+		}
+
+		.header-title {
+			position: relative;
+			top: 240px;
+		}
+	}
+
+}
+
+.box-grid {
+	background: @lightgray;
+	margin: 0px auto;
+	width: 100%;
+	padding: 0px;
+	height: 376px;
+	// box-shadow: 0 8px 6px -6px gray;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: 900px) {
+		img {
+			width: 120%;
+		}
+	}
+
+	.box-bottom1 {
+		text-align: left;
+		width: 50%;
+		height: 600px;
+		background: @lightgray;
+
+		h2 {
+			text-align: center;
+			padding: 30px;
+		}
+
+		h3 {
+			font-size: 1.4rem;
+			padding-left: 30px;
+		}
+
+		h4 {
+			font-size: 1.1rem;
+			padding: 5px 0px 30px 50px;
+			color: rgb(185, 185, 185);
+		}
+
+		h5 {
+			float: right;
+			padding-right: 40px;
+		}
+
+		hr {
+			margin: 50px;
+		}
+
+		p {
+			padding: 20px;
+			line-height: 1.5rem;
+		}
+	}
+
+	.box-bottom2 {
+		.box-bottom1();
+		border-right: 1px solid white;
+	}
+
+	}
+
+	#boxes {
+		width: 50%;
+		height: 376px;
+		display: flex;
+  		justify-content: center;
+		flex-direction: column;
+		font-size: 1.1rem;
+		overflow: hidden;
+
+		#headtag {
+			font-size: .9rem;
+			padding-top: 40px;
+			text-align: center;
+		}
+	}
+
+	h1 {
+		font-size: 3rem;
+		align-content: center;
+		padding: 5px;
+		display: inline;
+		text-align: center;
+	}
+
+	h2 {
+		color: @blue;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+
+.mid-row3 {
+	background: white;
+
+	ul {
+		list-style-type: circle;
+		list-style-position: inside;
+		padding: 5px 50px;
+	}
+
+	h2 {
+		text-align: left;
+		padding-left: 35px;
+	}
+}
+
+hr {
+	width: 80%;
+	margin-top: 20px;
+}
+
+.mid-row2 {
+	.mid-row3();
+	align-content: center;
+	align-items: center;
+
+	img {
+		width: 70%;
+	}
+}
+
+.mid-row1 {
+	.mid-row3();
+
+	h2 {
+		text-align: left;
+		padding-left: 30px;
+	}
+	
+	p {
+		line-height: 1.2rem;
+		text-align: none;
+		padding: 30px;
+		margin-top: -20px;
+		text-align: justify;
+  		text-justify: inter-word;
+	}
+}
+
+.contact {
+	margin-top: 250px;
+	padding: 100px;
+
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+	  }
+	  
+	  input[type=submit] {
+		background-color: #4677a5;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	  }
+	  
+	  input[type=submit]:hover {
+		background-color: #4677a5;
+	  }
+	  
+}
+
+footer {
+	margin-top: 0px;
+	padding: 20px;
+	text-align: center;
+	color: gray;
+	font-size: .8rem;
+
+	a {
+		text-decoration: none;
+		color: @blue;
+	}
+}
