@@ -394,3 +394,41 @@ hr {
   text-align: justify;
   text-justify: inter-word;
 }
+.contact {
+  margin-top: 250px;
+  padding: 100px;
+}
+.contact input[type=text],
+.contact select,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.contact input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact input[type=submit]:hover {
+  background-color: #45a049;
+}
+footer {
+  margin-top: 0px;
+  padding: 20px;
+  text-align: center;
+  color: gray;
+  font-size: 0.8rem;
+}
+footer a {
+  text-decoration: none;
+  color: #4677a5;
+}
