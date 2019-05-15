@@ -250,6 +250,59 @@ nav a:hover {
     width: 120%;
   }
 }
+.box-grid .box-bottom1 {
+  text-align: left;
+  width: 50%;
+  height: 600px;
+  background: #eeeeee;
+}
+.box-grid .box-bottom1 h2 {
+  text-align: center;
+  padding: 30px;
+}
+.box-grid .box-bottom1 h3 {
+  font-size: 1.4rem;
+  padding-left: 30px;
+}
+.box-grid .box-bottom1 h4 {
+  font-size: 1.1rem;
+  padding: 5px 0px 30px 50px;
+  color: #b9b9b9;
+}
+.box-grid .box-bottom1 h5 {
+  float: right;
+  padding-right: 40px;
+}
+.box-grid .box-bottom1 hr {
+  margin: 50px;
+}
+.box-grid .box-bottom2 {
+  text-align: left;
+  width: 50%;
+  height: 600px;
+  background: #eeeeee;
+  border-right: 1px solid white;
+}
+.box-grid .box-bottom2 h2 {
+  text-align: center;
+  padding: 30px;
+}
+.box-grid .box-bottom2 h3 {
+  font-size: 1.4rem;
+  padding-left: 30px;
+}
+.box-grid .box-bottom2 h4 {
+  font-size: 1.1rem;
+  padding: 5px 0px 30px 50px;
+  color: #b9b9b9;
+}
+.box-grid .box-bottom2 h5 {
+  float: right;
+  padding-right: 40px;
+}
+.box-grid .box-bottom2 hr {
+  margin: 50px;
+}
 #boxes {
   width: 50%;
   height: 376px;
